@@ -1,9 +1,11 @@
 package com.coolweather.android.db;
 
+import org.litepal.crud.DataSupport;
+
 /**
  * 省
  */
-public class Province {
+public class Province extends DataSupport {
 
     private int id;
     private String provinceName; // 省名
