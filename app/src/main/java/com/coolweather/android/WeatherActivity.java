@@ -85,7 +85,7 @@ public class WeatherActivity extends AppCompatActivity {
 
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this); // 此方法已经弃用
         String weatherString = prefs.getString("weather", null);
-        Log.d("测试weatherString是否为null：", weatherString);
+        // Log.d("测试weatherString是否为null：", weatherString);
         if (weatherString != null) {
             // 有缓存时直接解析天气数据
             Weather weather = Utility.handleWeatherResponse(weatherString);
